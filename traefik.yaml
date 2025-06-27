@@ -1,0 +1,17 @@
+entryPoints:
+  web:
+    address: ":80"
+
+providers:
+  file:
+    directory: "/etc/traefik/dynamic"
+    watch: true
+
+api:
+  dashboard: true
+
+experimental:
+  localPlugins:
+    plugin_datadome:
+      moduleName: "github.com/traefik/plugin_datadome"
+

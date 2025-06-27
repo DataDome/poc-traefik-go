@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  traefik:
+    build: .
+    ports:
+      - "8080:8080"
+      - "80:80"
+    volumes:
+      - ./traefik.yaml:/etc/traefik/traefik.yaml
+      - ./dynamic:/etc/traefik/dynamic
+      - ./plugins:/plugins-local
+    environment:
+      - DATADOME_SERVER_SIDE_KEY=${DATADOME_SERVER_SIDE_KEY}
+
+
