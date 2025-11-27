@@ -17,5 +17,5 @@ http:
     my_plugin_datadome:
       plugin:
         plugin_datadome:
-          endpoint: "https://api.datadome.co/validate-request"
+          endpoint: "api.datadome.co"
 

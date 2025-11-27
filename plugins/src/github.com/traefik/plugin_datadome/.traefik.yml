@@ -14,4 +14,4 @@ summary: Description of what my plugin is doing
 # This is mandatory,
 # and Plugins Catalog will try to execute the plugin with the data you provide as part of its startup validity tests.
 testData:
-  endpoint: "https://api.datadome.co/validate-request"
+  endpoint: "api.datadome.co"
