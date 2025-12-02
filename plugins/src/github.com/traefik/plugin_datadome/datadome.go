@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	modulego "github.com/traefik/plugin_datadome/modulego"
+	modulego "github.com/datadome/module-go-package/v2"
 )
 
 type Config struct {
