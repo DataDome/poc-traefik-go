@@ -1,0 +1,21 @@
+http:
+  routers:
+    test:
+      rule: "PathPrefix(`/`)"
+      entryPoints: ["web"]
+      service: dummy
+      middlewares:
+        - my_plugin_datadome
+
+  services:
+    dummy:
+      loadBalancer:
+        servers:
+          - url: "http://httpbin.org"
+
+  middlewares:
+    my_plugin_datadome:
+      plugin:
+        plugin_datadome:
+          endpoint: "api.datadome.co"
+
